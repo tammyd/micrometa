@@ -214,7 +214,6 @@ class JsonLD
         } elseif ($jsonLD instanceof Value) {
             return $this->parseValue($jsonLD);
         } else {
-            echo 'Unknown JSON-LD item: '.get_class($jsonLD).PHP_EOL;
             return null;
         }
     }
